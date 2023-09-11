@@ -20,11 +20,11 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="container mx-auto my-7">
       <div className='text-center'>
         <h1>Test Stripe API</h1>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
         {products.map(product => (
           <ProductCard key={product.id} product={product} />
         ))}
