@@ -25,9 +25,8 @@ export async function checkout({ lineItems }: CheckoutParams): Promise<void> {
         // รีเทิร์น instance ของ Stripe
         return stripePromise!;
     };
-
-
-  // เรียกใช้ฟังก์ชัน getStripe เพื่อรับ instance ของ Stripe
+    
+  //เรียกใช้ฟังก์ชัน getStripe เพื่อรับ instance ของ Stripe
   const stripe = await getStripe();
 
   // ส่งผู้ใช้ไปยังหน้า checkout ของ Stripe

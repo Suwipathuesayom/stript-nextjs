@@ -6,14 +6,14 @@ export default function Home() {
     { 
       id: 1, 
       name: 'Bonchon', 
-      price: 29.99, 
+      price: 259, 
       image: '/images/Bonchon.jpg',
       description: 'ไก่ทอดซอสเกาหลี'
     },
     { 
       id: 2, 
       name: 'Kfc', 
-      price: 19.99, 
+      price: 159, 
       image: '/images/kfc.png',
       description: 'ชุดไก่ทอดกรอบ'
     }
@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <main className="container mx-auto my-7">
       <div className='text-center'>
-        <h1>Test Stripe API</h1>
+        <h1>ทดสอบ Stripe API</h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
+      <div className="flex flex-wrap justify-center mt-10 gap-4">
         {products.map(product => (
           <ProductCard key={product.id} product={product} />
         ))}
